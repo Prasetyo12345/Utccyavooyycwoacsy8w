@@ -1,6 +1,7 @@
 [1]
 Key       : 9zA7oEU22lUcGUPwP65W0BzWQgo9qFds
 Max Dev   : 3
+Device id : 6c508a5f8efd2140
 Device id : b7fbce8eeacd9968
 Days      : 1
 Expired   : 2025-11-21
