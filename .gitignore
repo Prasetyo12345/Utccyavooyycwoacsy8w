@@ -1,0 +1,6 @@
+# Jangan commit database key (jika sensitif)
+keys/keys.db
+# Editor/temp files
+*.swp
+*.tmp
+

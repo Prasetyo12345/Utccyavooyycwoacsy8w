@@ -1,0 +1,169 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+KEYS_DIR="./keys"
+DB_FILE="$KEYS_DIR/keys.db"
+
+mkdir -p "$KEYS_DIR"
+touch "$DB_FILE"
+
+now() { date -u +"%Y-%m-%dT%H:%M:%SZ"; }
+
+rand_key() {
+  local LENGTH="${1:-32}"
+  tr -dc 'A-Za-z0-9' </dev/urandom | head -c "$LENGTH"
+  echo
+}
+
+sha256() { echo -n "$1" | openssl dgst -sha256 | awk '{print $2}'; }
+
+add_key() {
+  local key="$1"
+  local maxdev="$2"
+  local days="$3"
+
+  local created=$(now)
+  local expiry=$(date -d "+${days} days" +"%Y-%m-%d")
+
+  local hash=$(sha256 "$key")
+
+  echo "{\"key\":\"$key\",\"hash\":\"$hash\",\"maxdev\":$maxdev,\"days\":$days,\"created\":\"$created\",\"expiry\":\"$expiry\",\"revoked\":false}" >> "$DB_FILE"
+
+  echo ""
+  echo "=== KEY CREATED ==="
+  echo "KEY        : $key"
+  echo "MAX DEVICE : $maxdev"
+  echo "DAYS       : $days"
+  echo "EXP DATE   : $expiry"
+}
+
+list_keys() { nl -ba "$DB_FILE"; }
+show_key() { grep -F "\"key\":\"$1\"" "$DB_FILE" || echo "Key not found"; }
+
+revoke_key() {
+  local key="$1"
+  local tmp=$(mktemp)
+  while read -r line; do
+    if echo "$line" | grep -q "\"key\":\"$key\""; then
+      line=$(echo "$line" | sed 's/"revoked":false/"revoked":true/')
+    fi
+    echo "$line" >> "$tmp"
+  done < "$DB_FILE"
+  mv "$tmp" "$DB_FILE"
+  echo "Key revoked: $key"
+}
+
+delete_key() {
+  grep -v "\"key\":\"$1\"" "$DB_FILE" > "$DB_FILE.tmp" || true
+  mv "$DB_FILE.tmp" "$DB_FILE"
+  echo "Key deleted: $1"
+}
+
+export_keys() {
+  cp "$DB_FILE" keys_export.json
+  echo "Exported to keys_export.json"
+}
+
+github_push() {
+  git add "$DB_FILE"
+  git commit -m "update keys $(now)" || true
+  git push origin main
+}
+
+# ========== MENU INTERAKTIF ==========
+menu() {
+  clear
+  echo "=============================="
+  echo "         KEYGEN MENU"
+  echo "=============================="
+  echo "1) Generate Random Key"
+  echo "2) Generate Custom Key"
+  echo "3) List Keys"
+  echo "4) Show Key"
+  echo "5) Revoke Key"
+  echo "6) Delete Key"
+  echo "7) Export Keys"
+  echo "8) Push to GitHub"
+  echo "0) Exit"
+  echo "=============================="
+  read -p "Choose option : " opt
+
+  case "$opt" in
+
+    1)
+      read -p "Key Length (default 32): " len
+      read -p "Max Device: " maxdev
+      read -p "Expired Days: " days
+      key=$(rand_key "${len:-32}")
+      add_key "$key" "$maxdev" "$days"
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    2)
+      read -p "Input Custom Key: " key
+      read -p "Max Device: " maxdev
+      read -p "Expired Days: " days
+      add_key "$key" "$maxdev" "$days"
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    3)
+      list_keys
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    4)
+      read -p "Key to show: " key
+      show_key "$key"
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    5)
+      read -p "Key to revoke: " key
+      revoke_key "$key"
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    6)
+      read -p "Key to delete: " key
+      delete_key "$key"
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    7)
+      export_keys
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    8)
+      github_push
+      read -p "Press Enter to continue..."
+      menu
+      ;;
+
+    0)
+      exit 0
+      ;;
+
+    *)
+      echo "Invalid choice"
+      sleep 1
+      menu
+      ;;
+  esac
+}
+
+# jika tidak ada argumen → tampilkan MENU
+if [ $# -eq 0 ]; then
+  menu
+  exit 0
+fi
+
+echo "Gunakan: ./keygen.sh   (untuk menu utama)"
