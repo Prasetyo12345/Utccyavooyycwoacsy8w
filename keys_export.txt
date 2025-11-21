@@ -2,10 +2,11 @@
 Key       : SfyApXvcs70zzE5aUf6RrGquEOWTzGog
 Max Dev   : 1
 Device id : 6c508a5f8efd2140
-Days      : 2
-Expired   : 15-11-2025
+Days      : 5
+Expired   : 27-11-2025
 Status    : EXPIRED
 ------------------------------
+
 
 
 
