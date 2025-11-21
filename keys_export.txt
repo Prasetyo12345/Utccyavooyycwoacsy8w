@@ -1,9 +1,2 @@
- 
-[2]
-Key       : 7XnacDCqWBFIDe9GOZD98eV0UIpBMEzJ
-Max Dev   : 
-Days      : 
-Expired   : 2025-11-22
-Status    : ACTIVE
-------------------------------
+
 
