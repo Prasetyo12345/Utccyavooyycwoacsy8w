@@ -4,8 +4,9 @@ Max Dev   : 1
 Device id : 6c508a5f8efd2140
 Days      : 1
 Expired   : 2025-11-22
-Status    : ACTIVE
+Status    : BANNED
 ------------------------------
+
 [2]
 Key       : tEdnVUpZwAeMyutuFW5A2CqRFCnncXuz
 Max Dev   : 3
@@ -13,4 +14,6 @@ Days      : 2
 Expired   : 2025-11-23
 Status    : ACTIVE
 ------------------------------
+
+
 
