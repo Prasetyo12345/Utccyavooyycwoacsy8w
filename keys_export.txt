@@ -1,15 +1,6 @@
 
 
 [3]
-Key       : W4zrOVA5fHFwaS5nTzBhAMGOQBp5hdyp
-Max Dev   : 3
-Days      : 1
-Expired   : 2025-11-22
-Status    : ACTIVE
-------------------------------
-
-
-[3]
 Key       : vfGG3Fud9mftUbI4DRZyaLwlWhihGtz4
 Max Dev   : 5
 Days      : 2
