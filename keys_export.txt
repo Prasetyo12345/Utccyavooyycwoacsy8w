@@ -1,9 +1,2 @@
-[1]
-Key       : tcn5t0dT91oAkivgoMeJTysGYwd1plEi
-Max Dev   : 3
-Days      : 1
-Expired   : 2025-11-22
-Status    : BANNED
-Reason    : wkkw
-------------------------------
+
 
