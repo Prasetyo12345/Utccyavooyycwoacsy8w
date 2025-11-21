@@ -13,3 +13,11 @@ Status    : BANNED
 Reason    : aku benci
 ------------------------------
 
+[2]
+Key       : dC0JG4FvEj9Rwhm4h4CdTF54VrF1p6v4
+Max Dev   : 1
+Days      : 2
+Expired   : 23-11-2025
+Status    : ACTIVE
+------------------------------
+
