@@ -4,8 +4,9 @@ Max Dev   : 1
 Device id : 6c508a5f8efd2140
 Days      : 2
 Expired   : 15-11-2025
-Status    : EXPIRED
+Status    : ACTIVE
 ------------------------------
+
 
 
 
