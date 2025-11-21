@@ -5,8 +5,11 @@ Key       : tEdnVUpZwAeMyutuFW5A2CqRFCnncXuz
 Max Dev   : 3
 Days      : 19
 Expired   : 2025-12-10
-Status    : ACTIVE
+Status    : BANNED
 ------------------------------
+
+Reason    : test aja.
+
 
 
 
