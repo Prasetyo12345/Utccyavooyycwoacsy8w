@@ -1,13 +1,4 @@
 
-[2]
-Key       : 7hJWpWOyxJrP1d7KXaakGlwiBHHlPver
-Max Dev   : 9
-Days      : 2
-Expired   : 2025-11-23
-Status    : BANNED
-Reason    : UJAY KONTOL
-------------------------------
-
 
 
 
@@ -21,6 +12,8 @@ Status    : ACTIVE
 
 
 
+
+
 [3]
 Key       : SfyApXvcs70zzE5aUf6RrGquEOWTzGog
 Max Dev   : 2
@@ -28,4 +21,5 @@ Days      : 5
 Expired   : 2025-11-26
 Status    : ACTIVE
 ------------------------------
+
 
