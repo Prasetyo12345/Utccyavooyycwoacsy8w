@@ -8,9 +8,9 @@ Key       : dC0JG4FvEj9Rwhm4h4CdTF54VrF1p6v4
 Max Dev   : 1
 Days      : 2
 Expired   : 23-11-2025
-Status    : BANNED
-Reason    : UJAY KONTOL
+Status    : ACTIVE
 ------------------------------
+
 
 [2]
 Key       : uvhcBddiqQDboQdh73ajBwpp50eFL2fX
