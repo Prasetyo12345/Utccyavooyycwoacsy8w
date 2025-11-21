@@ -6,6 +6,7 @@
 [2]
 Key       : dC0JG4FvEj9Rwhm4h4CdTF54VrF1p6v4
 Max Dev   : 1
+Device id : 6c508a5f8efd2140
 Days      : 2
 Expired   : 23-11-2025
 Status    : ACTIVE
@@ -19,4 +20,3 @@ Days      : 1d
 Expired   : 23-11-2025
 Status    : ACTIVE
 ------------------------------
-
