@@ -12,3 +12,11 @@ Status    : BANNED
 Reason    : UJAY KONTOL
 ------------------------------
 
+[2]
+Key       : uvhcBddiqQDboQdh73ajBwpp50eFL2fX
+Max Dev   : 2
+Days      : 1d
+Expired   : 23-11-2025
+Status    : ACTIVE
+------------------------------
+
