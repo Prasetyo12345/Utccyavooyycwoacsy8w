@@ -6,8 +6,8 @@
 [3]
 Key       : SfyApXvcs70zzE5aUf6RrGquEOWTzGog
 Max Dev   : 1
+Device id : 6c508a5f8efd2140
 Days      : 5
 Expired   : 2025-11-26
 Status    : ACTIVE
 ------------------------------
-
