@@ -8,10 +8,11 @@ Key       : SfyApXvcs70zzE5aUf6RrGquEOWTzGog
 Max Dev   : 1
 Device id : 6c508a5f8efd2140
 Days      : 5
-Expired   : 2025-11-26
+Expired   : 26-11-2025
 Status    : BANNED
 Reason    : aku benci
 ------------------------------
+
 
 [2]
 Key       : dC0JG4FvEj9Rwhm4h4CdTF54VrF1p6v4
