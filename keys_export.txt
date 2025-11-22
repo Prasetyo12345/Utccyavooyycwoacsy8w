@@ -12,8 +12,8 @@ Status    : ACTIVE
 [2]
 Key       : AndikaBanDalam
 Max Dev   : 1
+Device id : 6c508a5f8efd2140
 Days      : 99999d
 Expired   : 06-09-2299
 Status    : ACTIVE
 ------------------------------
-
