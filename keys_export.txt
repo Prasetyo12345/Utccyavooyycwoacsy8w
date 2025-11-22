@@ -20,3 +20,11 @@ Days      : 1d
 Expired   : 23-11-2025
 Status    : ACTIVE
 ------------------------------
+[3]
+Key       : AndikaKusogaki
+Max Dev   : 1
+Days      : 3d
+Expired   : 25-11-2025
+Status    : ACTIVE
+------------------------------
+
