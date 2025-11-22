@@ -11,14 +11,3 @@ Status    : ACTIVE
 ------------------------------
 
 
-
-[3]
-Key       : test
-Max Dev   : 1
-Device id : ff9e52c4a1ed9ba6
-Days      : 1d
-Expired   : 23-11-2025
-Status    : ACTIVE
-------------------------------
-
-
