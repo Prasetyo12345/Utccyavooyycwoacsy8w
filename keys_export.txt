@@ -1,15 +1,6 @@
 
 
 [2]
-Key       : uvhcBddiqQDboQdh73ajBwpp50eFL2fX
-Max Dev   : 2
-Days      : 1d
-Expired   : 23-11-2025
-Status    : ACTIVE
-------------------------------
-
-
-[2]
 Key       : AndikaKusogaki
 Max Dev   : 1
 Days      : 3d
