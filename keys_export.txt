@@ -2,7 +2,7 @@
 
 [2]
 Key       : AndikaKusogaki
-Max Dev   : 2
+Max Dev   : 1
 Device id : b7fbce8eeacd9968
 Days      : 3d
 Expired   : 25-11-2025
