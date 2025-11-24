@@ -19,3 +19,11 @@ Expired   : 23-11-2025
 Status    : ACTIVE
 ------------------------------
 
+[3]
+Key       : hai
+Max Dev   : 1
+Days      : 1d
+Expired   : 25-11-2025
+Status    : ACTIVE
+------------------------------
+
