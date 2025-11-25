@@ -11,14 +11,3 @@ Status    : ACTIVE
 ------------------------------
 
 
-
-[3]
-Key       : hai
-Max Dev   : 1
-Device id : b2e6980ca6549793
-Days      : 1d
-Expired   : 25-11-2025
-Status    : ACTIVE
-------------------------------
-
-
