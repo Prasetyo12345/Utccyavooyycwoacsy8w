@@ -11,16 +11,3 @@ Status    : ACTIVE
 ------------------------------
 
 
-
-
-
-[2]
-Key       : dik
-Max Dev   : 1
-Device id : 6c508a5f8efd2140
-Days      : 1d
-Expired   : 09-12-2025
-Status    : BANNED
-Reason    : hai
-------------------------------
-
